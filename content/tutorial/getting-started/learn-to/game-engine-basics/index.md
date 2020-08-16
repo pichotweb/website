@@ -12,59 +12,69 @@ difficulty = "beginner"
 keywords = ["tutorial"]
 +++
 
-Learning a complex software tool like a game engine can be overwhelming for beginners. In this tutorial we'll break down how a game engine works generally and then we'll look at a few [Godot](https://godotengine.org) highlights specifically.
+In this guide, we break down how game engines work and look at the [Godot game engine](https://godotengine.org).
 
 We'll learn about:
 
-- What game engines do
-- How to choose the right game engine
-- What is the Godot game engine
-
-## What is a game engine
-
-A game engine is a full-featured software and/or framework tool for making games. Put very simply that is what a game engine is.
-
-The purpose of a game engine is to make game developers' life easier by automating repetitive tasks that appear in most game projects. This comes with advantages and disadvantages.
+- What game engines do.
+- How to choose the right game engine.
 
 ![Game Engine Screens](./img/game-engine-screenshots.png)
 
-The advantages are that:
+## What's a game engine?
 
-- We don't have to build everything from ground up facilitating fast prototyping and building a workflow pipeline.
-- Tool makers integrate their software with existing game engines making it easier to use their assets.
-- Developers can focus on game content rather than technicalities.
-- Makes it easier for non-coders to participate in the game development process.
+A game engine is a full-featured program or framework to create games.
+Their purpose is to make game developers' life easier by automating repetitive tasks that appear in most game projects, like drawing images on the screen or playing audio.
 
-On the other hand, disadvantages include:
+These days, we take for granted that an engine should manage:
 
-- It's harder to control performance since we rely on very complex code built and maintained by a third party. In case of open source projects, even though we have access to the code, the architecture in most cases is too complicated to directly modify and improve.
-- Workflows can become highly specialized making it difficult to integrate or expand with other software tools.
-
-Game engines come in many flavors, some offer game editors while others come packaged as SDKs (Software Development Kits) offering only the code base to build upon.
-
-The game editor allows us to visually create our game from different assets (images, 3D models, audio files etc.) while the engine is the framework that allows us to run our games.
-
-A game engine that comes with a full-featured editor is, for example, Godot. Other options, like [Panda3D](https://www.panda3d.org), provide just an SDK (Software Development Kit) without the editor. This isn't to say that one is better than the other. Every team and person has different needs and these tools have to be assessed case-by-case.
-
-These days we take for granted what a game engine has to offer:
-
-- User input handling
+- User input
 - Animation
 - Audio
 - Navigation
 - Internationalization
-- GUI (Graphics User Interfaces)
+- Graphical User Interface
 - Networking
 - Rendering
-- Particle system
-- Physics simulations
+- Particle systems and visual effects
+- Physics simulation
 - Profiling and debugging
-- Compile and run projects on multiple platforms
-- AI functionality
+- Compile and exporting projects on multiple platforms
 
-And many more features. Later we'll dive into the specifics of the Godot game engine, a tool we successfully use here at GDQuest.
+And more. These expectations came with the growth of general game engines like Unreal or Unity. A general engine is one that allows you to create many sorts of games. There are dozens of them available for free today.
 
-### The game loop
+On the other hand, specialized engines are created and optimized for one game or one type of game. RPG Maker, a program designed to create 2D Japanese RPGs, is a well-known example. Popular indie games like Super Meat Boy or Northgard also run on dedicated engines.
+
+rpg-maker.png
+
+Game engines come in many flavors. Some offer a complete editor while others only provide code that you build from.
+
+Editors allow you to create game levels visually. You import assets like images, 3D models, or audio files and place them in the editor's viewport. The actual engine is the code that takes all these levels and runs your game.
+
+godot-editor.png
+
+Some game engines come with a complete editor: Unreal, Unity, Godot, Game Maker, Construct. Others like Panda3D or Phaser only provide code. This isn't to say that one type is better than the other. Every development team has different needs, and they should assess the tools they use on a per-project basis.
+
+### Pros and cons
+
+Using a game engine has advantages and disadvantages.
+
+Some pros are that:
+
+- You can focus on game content rather than technicalities.
+- You don't have to learn to build everything from the ground up, like drawing pixels on the screen or playing audio.
+- With an editor, it's easier for non-coders to participate in the development process.
+- Engines can provide a plugin <abbr title="Application Programming Interface">API</abbr> for third-parties to integrate their tools and make them available to others. You can find many specialized editors for different types of games on Unity's asset store, for example.
+
+Here are some cons:
+
+- It's harder to control performances since you rely on complex software written by someone else. In the case of open-source projects, even though you have access to the code, the codebase can be too complicated to adapt it to your needs.
+- You have to adapt to the engine's workflow and the way it works.
+- You also have to work with its quirks and weaknesses.
+
+Of course, these depend a lot on your current skills. If you have no programming experience, creating an engine might not even be an option. You'll want to [learn to code]({{< ref  "tutorial/getting-started/learn-to/game-engine-basics/index.md" >}}) first and maybe gain some experience coding small programs and games to get your wet first.
+
+## The game loop
 
 So how does a game engine work? The primary concept of a game engine is **the game main loop**. We can think of the game loop as the heart of the game engine. It's what makes it tick.
 
@@ -108,9 +118,9 @@ The complexity comes from the fact that, although there is overlap, when it come
 
 Depending on your background, scripting language availability might turn out to be a big factor. Not everyone is willing to learn a new language from scratch. On the other hand, artists and non-coders might want prefer visual scripting languages.
 
-####  Customizability
+#### Customizability
 
-This is different from being an open source project which can be customized at the low level. Most game engines these days have a plug-in system in place that allows extensibility and customization of the workflow. It's one factor to consider.
+This is different from being an open source project which can be customized at the low level. Most game engines these days have a plugin system in place that allows extensibility and customization of the workflow. It's one factor to consider.
 
 #### Performance, storage and run-time memory
 
@@ -122,7 +132,7 @@ Supported platforms is a major factor to consider since this might limit our ava
 
 #### Support for different asset types
 
-Importing assets from external tools is very important as not everything can and is done through the game engine framework itself.
+Importing assets from external tools isimportant as not everything can and is done through the game engine framework itself.
 
 #### Community
 
@@ -131,7 +141,7 @@ Having a community available can help us get unstuck on specific issues we might
 #### Tool design philosophy and architecture
 
 This can cover a wide spectrum of concerns, going from object oriented programming concepts all the way to functional programming concepts and beyond. Design philosophy of the tool can influence our workflow greatly so it's a factor to consider.
-
+    
 #### Tool development cycle
 
 How fast a tool releases updates, fixes, new version is something to consider. It's a sign of people being interested in the tool and the activity behind the management.
@@ -148,7 +158,7 @@ In the next part we'll look at a few highlights from the Godot game engine.
 
 ## Why Godot
 
-At GDQuest we have a very strong connection with the Godot game engine. It's a tool that successfully worked for our specific needs. Let's look at how the considerations above stack up against Godot:
+At GDQuest we have astrong connection with the Godot game engine. It's a tool that successfully worked for our specific needs. Let's look at how the considerations above stack up against Godot:
 
 #### Closed source VS open source
 
@@ -164,7 +174,7 @@ When we first started using Godot, documentation was lacking. These days it has 
 
 #### Editor
 
-Godot has a very beginner-friendly game editor which is a big plus.
+Godot has abeginner-friendly game editor which is a big plus.
 
 #### 2D/3D support
 
@@ -183,7 +193,7 @@ So Godot is packed with options when it comes to this question.
 
 #### Customizability
 
-Godot currently has a clunky plug-in system which is in the process of being re-written. At GDQuest we have sparingly used it for our projects so it isn't a main concern.
+Godot currently has a clunky plugin system which is in the process of being re-written. At GDQuest we have sparingly used it for our projects so it isn't a main concern.
 
 #### Performance, storage and run-time memory
 
@@ -191,9 +201,9 @@ As mentioned before, the 2D part of the engine is much more mature and so the pe
 
 There is considerable effort to bring the latest tech into the 3D implementation. We expect a bing change with Godot v4.
 
-The executable itself is has a very small storage footprint which is very impressive for the functionality that it brings. Likewise the compiled projects can be very small in size and this can also be optimized further.
+The executable itself is has asmall storage footprint which isimpressive for the functionality that it brings. Likewise the compiled projects can besmall in size and this can also be optimized further.
 
-For us this means a very important growth impact when it comes to this consideration.
+For us this means aimportant growth impact when it comes to this consideration.
 
 #### OS cross-compilation
 
@@ -201,11 +211,11 @@ Godot can compile for virtually all available platforms. From mobile, to PC, Lin
 
 #### Support for different asset types
 
-This game engine supports most main-stream assets and there are a number of tools that have created exporters for Godot. So this part is very well covered.
+This game engine supports most main-stream assets and there are a number of tools that have created exporters for Godot. So this part iswell covered.
 
 #### Community
 
-Godot has a very vibrant community, growing at a very steady pace with many contributors to the project itself, but also to giving feedback and helping out beginners.
+Godot has avibrant community, growing at asteady pace with many contributors to the project itself, but also to giving feedback and helping out beginners.
 
 ### Conclusion
 
@@ -217,13 +227,13 @@ As we saw above, it comes with an impressive list of features, packed in a tiny 
 
 ![Godot Game Engine](img/godot-engine.png)
 
-One of Godot's main design goals is to be user-friendly, having a very low entry bar which means that artists and non-coders can learn to make games with it just as much as anyone else.
+One of Godot's main design goals is to be user-friendly, having alow entry bar which means that artists and non-coders can learn to make games with it just as much as anyone else.
 
-Its main coding language is called GDScript, an in-house built scripting language highly influenced by Python, but far more simpler. Being derived from Python means that it's very close to the English spoken language which is one reason why it can be learned very quickly. Among other things, Godot also comes with a visual script editor which means that we can code visually, connecting nodes together. For advanced users, Godot also officially supports C# as an alternative scripting language.
+Its main coding language is called GDScript, an in-house built scripting language highly influenced by Python, but far more simpler. Being derived from Python means that it'sclose to the English spoken language which is one reason why it can be learnedquickly. Among other things, Godot also comes with a visual script editor which means that we can code visually, connecting nodes together. For advanced users, Godot also officially supports C# as an alternative scripting language.
 
 ![Godot Visual Script Editor](./img/godot-visual-scripting.png)
 
-In Godot, we have a class called [`MainLoop`](https://docs.godotengine.org/en/stable/classes/class_mainloop.html#class-mainloop) which is this game engine's main game loop. It can be customized with our own code if required, although in practice this is very situational.
+In Godot, we have a class called [`MainLoop`](https://docs.godotengine.org/en/stable/classes/class_mainloop.html#class-mainloop) which is this game engine's main game loop. It can be customized with our own code if required, although in practice this issituational.
 
 The default `MainLoop` implementation is provided by the [`SceneTree`](https://docs.godotengine.org/en/stable/classes/class_scenetree.html#class-scenetree) class. It manages a tree hierarchy of nodes that together create a scene tree. To learn more about the `SceneTree` and Godot's particular implementation of the main loop check out the [`SceneTree` tutorial](https://docs.godotengine.org/en/stable/getting_started/step_by_step/scene_tree.html) in the official docs.
 
@@ -234,4 +244,3 @@ The image above shows a scene tree structure made with built-in nodes, from one 
 All of these features and design decisions that go into creating a game engine come into play when deciding on which package to choose for our own projects. For us, Godot is our main pick as one of the fastest growing open source game engines available.
 
 Perhaps it can be for you too.
-
