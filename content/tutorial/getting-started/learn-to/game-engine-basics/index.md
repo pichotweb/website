@@ -11,12 +11,12 @@ draft = true
 
 In this guide, we break down how game engines work through the lens of a top-level overview.
 
-{{< note >}}Througout this article we'll use mostly Godot screenshots to demonstrate specific mechanics in game engines since it's the primary tool we use here at GDQuest.{{</ note >}}
+{{< note >}}Throughout this article we'll use mostly Godot screenshots to demonstrate specific mechanics in game engines since it's the primary tool we use here at GDQuest.{{</ note >}}
 
 By the end of this article you'll know about:
 
 - What game engines do.
-- How to choose the right game engine.
+- How to choose _the right_ game engine.
 
 ## What's a game engine?
 
@@ -60,7 +60,9 @@ Some pros are that:
 - You can focus on game content rather than technicalities.
 - You don't have to learn to build everything from the ground up, like drawing pixels on the screen or playing audio.
 - With an editor, it's easier for non-coders to participate in the development process.
-- Engines can provide a plugin <abbr title="Application Programming Interface">API</abbr> for third-parties to integrate their tools and make them available to others. You can find many specialized editors for different types of games on Unity's asset store, for example.
+- Engines can provide a plug-in <abbr title="Application Programming Interface">API</abbr> for third-parties to integrate their tools and make them available to others. You can find many specialized editors for different types of games on Unity's asset store, for example.
+
+![Godot Editor Content](./img/godot-content.png)
 
 Here are some cons:
 
@@ -68,7 +70,7 @@ Here are some cons:
 - You have to adapt to the engine's workflow and the way it works.
 - You also have to work with its quirks and weaknesses.
 
-Of course, these depend a lot on your current skills. If you have no programming experience, creating an engine might not even be an option. You'll want to [learn to code]({{< ref  "tutorial/getting-started/learn-to/game-engine-basics/index.md" >}}) first and maybe gain some experience coding small programs and games to get your wet first.
+Of course, these depend a lot on your current skills. If you have no programming experience, creating an engine might not even be an option. You'll want to [learn to code]({{< ref  "tutorial/getting-started/learn-to/game-engine-basics/index.md" >}}) first and maybe gain some experience coding small programs and games to get your feet wet first.
 
 ## How does a game engine work?
 
@@ -84,23 +86,29 @@ A game engine is built out of many complex parts or modules. Each with its own s
 
 Apart from the modules themselves, game engines have managers that organize the interaction between these different parts. Most modern game engines run some of these modules in parallel in order to improve performance. Parallel execution increases code complexity substantially, not to mention the complexities that comes with the visual rendering pipeline for the video card. For this reason and many more, most game developers, be it hobbyists and all the way to seniors, opt for available game engines on the market instead of creating everything from scratch.
 
+![Unity](./img/unity.png)
+
 Most of these tools allow you to inject custom functionality by means of a scripting programming language through the use of built-in components. So you can bring in third party assets and resources from different places such as 3D modelling applications, audio-creation tools, image editors, fonts from the internet, and much more that you can then organize, operate on, and customize to fit your game's needs.
 
-Most general game engines today offer more than just operating on and organizing these resources though. Through a plug-in architecture they allow you to even customize the game engine editor itself, leading to highly opinionated workflows. With modern video card technology some even allow you to customize the way things are rendered on the screen, by tapping into the video rendering pipeline.
+Most general game engines today offer more than just operating on and organizing these resources though. Through a plug-in architecture, they allow you to even customize the game engine editor itself, leading to highly opinionated workflows. With modern video card technology, some even allow you to customize the way things are rendered on the screen, by tapping into the video rendering pipeline.
 
 This just scratches the surface. There's lots more to talk about, advanced topics that we can't cover in a general article like this one.
 
-One very important aspect of game engines is a project manager that helps you exporting games for your target platforms, such as Windows, Linux, MacOS, Android, iOS, and consoles. We can't underestimate the importance of having an exports manager as there are many complexities that come with cross-platform support.
-
-Here at GDQuest we have specialized in Godot and if you want to learn more about it we have free tutorials and payed courses.
+One important aspect of game engines is a project manager that helps you exporting games for your target platforms, such as Windows, Linux, MacOS, Android, iOS, and consoles. We can't underestimate the importance of having an exports manager as there are many complexities that come with cross-platform support.
 
 ## Can I make my dream game now?
 
 Making games isn't an easy task, but answering this question is a bit more complicated. You have instances of highly popular simple games like Flappy Birds, but these are mostly exceptions. Even with these you need to have an understanding about programming, visual design and audio at the very least.
 
-One of the first questions to answer is how to choose a game engine. If you're a beginner or hobbyist starting out, browsing for game engines is relatively simple because you can just go for what's easy to find and free. Some of the more important aspects in choosing an engine, apart from it being free, is user-friendliness, documentation and community support rather than high performance. These are the first hurdles you may face at the very beginning and regardless of the tool you pick, you'll have to learn the basics of game development, skills that are transferable and can be applied to any tool.
+{{< figure src="./img/godot-game.jpg" alt="Godot Game: TailQuest" caption="[Godot Game: TailQuest](https://store.steampowered.com/app/824090/TailQuest_Defense/)" >}}
 
-With that in mind, instead of getting hung up on the decision, we recommend looking into the Godot game engine among your picks. We have many free [beginner-friendly tutorials and demos]({{< ref "tutorial/godot/_index.md" >}}) for it as well as [payed courses](https://gdquest.mavenseed.com/p/home) to help you get beyond the initial steps.
+One of the first questions to answer is how to choose a game engine. If you're a beginner or hobbyist starting out, browsing for game engines is relatively simple because you can just go for what's free and easy to find. Some of the more important aspects in choosing an engine, apart from it being free, is user-friendliness, documentation and community support rather than high performance. These are the first hurdles you may face at the beginning and regardless of the tool you pick, you'll have to learn the basics of game development, skills that are transferable and can be applied to any tool.
 
-Godot is a full-feature beginner-friendly general game engine, packed in a very small executable, capable of making both 2D and 3D games. It's well worth exploring what it has to offer.
+With that in mind, instead of getting hung up on the decision, we recommend looking into the Godot game engine among your picks.
+
+{{< note >}}We have many free [beginner-friendly Godot tutorials and demos]({{< ref "tutorial/godot/_index.md" >}}) as well as [in-depth courses](https://gdquest.mavenseed.com/p/home) to help you get beyond the initial steps. You can also support us through our latest Kickstarter - [Godot 2D Secrets: Level Up your Game Creation Skills](https://www.kickstarter.com/projects/gdquest/godot-2d-secrets-level-up-your-game-creation-skills) by getting a great deal out of it. We appreciate it!{{</ note >}}
+
+Godot is a full-feature beginner-friendly general game engine, packed in a small executable, capable of making both 2D and 3D games. It's well worth exploring what it has to offer.
+
+The documentation, although a bit unorganized at the moment, is mature enough. The community is friendly and helpful and Godot is one of the most developer-friendly game engines you can find.
 
