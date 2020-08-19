@@ -5,18 +5,18 @@ description = "What are game engines and what are the important factors to consi
 author = "razvan"
 
 date = 2020-08-15T21:52:08+03:00
-weight = 5
+weight = 2
 draft = true
 +++
 
 In this guide, we break down how game engines work through the lens of a top-level overview.
 
-{{< note >}}Throughout this article we'll use mostly Godot screenshots to demonstrate specific mechanics in game engines since it's the primary tool we use here at GDQuest.{{</ note >}}
-
 By the end of this article you'll know about:
 
 - What game engines do.
 - How to choose _the right_ game engine.
+
+{{< note >}}If your skills are above beginner-level programming and you're looking to explore a game engine, you might be interested in our [other article]({{< ref "tutorial/getting-started/learn-to/game-engine-choose/index.md" >}}) about choosing the right game engine for you. In that article we assume you know a bit about game engines already or at least are familiar with some terms.{{</ note >}}
 
 ## What's a game engine?
 
@@ -106,7 +106,7 @@ One of the first questions to answer is how to choose a game engine. If you're a
 
 With that in mind, instead of getting hung up on the decision, we recommend looking into the Godot game engine among your picks.
 
-{{< note >}}We have many free [beginner-friendly Godot tutorials and demos]({{< ref "tutorial/godot/_index.md" >}}) as well as [in-depth courses](https://gdquest.mavenseed.com/p/home) to help you get beyond the initial steps. You can also support us through our latest Kickstarter - [Godot 2D Secrets: Level Up your Game Creation Skills](https://www.kickstarter.com/projects/gdquest/godot-2d-secrets-level-up-your-game-creation-skills) by getting a great deal out of it. We appreciate it!{{</ note >}}
+{{< note >}}We have many free [beginner-friendly Godot tutorials and demos]({{< ref "tutorial/godot/_index.md" >}}) as well as [in-depth courses](https://gdquest.mavenseed.com) to help you get beyond the initial steps. You can also support us through [our latest Kickstarter](https://www.kickstarter.com/projects/gdquest/godot-2d-secrets-level-up-your-game-creation-skills), started 15 August, - Godot 2D Secrets: Level Up your Game Creation Skills by getting a great deal out of it. We appreciate it!{{</ note >}}
 
 Godot is a full-feature beginner-friendly general game engine, packed in a small executable, capable of making both 2D and 3D games. It's well worth exploring what it has to offer.
 
