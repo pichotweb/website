@@ -7,7 +7,6 @@ coAutors = ["nathan"]
 
 date = 2020-08-15T21:52:08+03:00
 weight = 2
-draft = true
 +++
 
 In this guide, you will get an introduction to game engines.
@@ -21,7 +20,7 @@ You will learn:
 ![Godot Assets in Editor](godot-engine.png)
 
 {{< note >}}
-If you're a developer already and you know about game engines, we have [a more advanced guide]({{< ref "tutorial/getting-started/learn-to/game-engine-choose/index.md" >}}) about choosing your game engine.
+If you're a developer already and you know about game engines, we have [a more advanced guide]({{< ref "tutorial/getting-started/learn-to/choosing-a-game-engine/index.md" >}}) about choosing your game engine.
 {{</ note >}}
 
 ## What's a game engine?
