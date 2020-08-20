@@ -9,14 +9,17 @@ weight = 2
 draft = true
 +++
 
-In this guide, we break down how game engines work through the lens of a top-level overview.
+In this guide, you will get an introduction to game engines.
 
-By the end of this article you'll know about:
+You will learn:
 
-- What game engines do.
-- How to choose _the right_ game engine.
+- What game engines are.
+- What they do.
+- How to choose the right game engine _for you_.
 
-{{< note >}}If your skills are above beginner-level programming and you're looking to explore a game engine, you might be interested in our [other article]({{< ref "tutorial/getting-started/learn-to/game-engine-choose/index.md" >}}) about choosing the right game engine for you. In that article we assume you know a bit about game engines already or at least are familiar with some terms.{{</ note >}}
+{{< note >}}
+If you're a developer already and you know about game engines, we have [a more advanced guide]({{< ref "tutorial/getting-started/learn-to/game-engine-choose/index.md" >}}) about choosing your game engine.
+{{</ note >}}
 
 ## What's a game engine?
 
@@ -37,9 +40,9 @@ These days, we take for granted that an engine should manage:
 - Profiling and debugging
 - Compile and exporting projects on multiple platforms
 
-And more. These expectations came with the growth of general game engines like Unreal or Unity. A general engine allows you to create many types of games. There are dozens of them available for free today.
+And more. These expectations came with the growth of general game engines like Unreal or Unity. A **general engine** allows you to create many types of games.
 
-On the other hand, specialized engines are created and optimized for one game or one type of game. RPG Maker, a program designed to create 2D Japanese RPGs, is a well-known example. Popular indie games like Super Meat Boy or Northgard also run on dedicated engines.
+On the other hand, **specialized engines** are created and optimized for one game or one type of game. RPG Maker, a program designed to develop 2D Japanese RPGs, is a well-known example. Popular indie games like Super Meat Boy or Northgard also run on dedicated engines.
 
 ![RPG Maker](./img/rpg-maker.jpg)
 
@@ -51,7 +54,7 @@ Editors allow you to create game levels visually. You import assets like images,
 
 Some game engines come with a complete editor: Unreal, Unity, Godot, Game Maker, Construct. Others like Panda3D or Phaser only provide code. This isn't to say that one type is better than the other. Every development team has different needs, and they should assess the tools they use on a per-project basis.
 
-### Pros and cons
+## Pros and cons of using an engine
 
 Using a game engine has advantages and disadvantages.
 
@@ -60,7 +63,7 @@ Some pros are that:
 - You can focus on game content rather than technicalities.
 - You don't have to learn to build everything from the ground up, like drawing pixels on the screen or playing audio.
 - With an editor, it's easier for non-coders to participate in the development process.
-- Engines can provide a plug-in <abbr title="Application Programming Interface">API</abbr> for third-parties to integrate their tools and make them available to others. You can find many specialized editors for different types of games on Unity's asset store, for example.
+- Engines can provide a plug-in <abbr title="Application Programming Interface">API</abbr> for third-parties to integrate their tools and make them available to others. You can find many specialized editors for different types of games on Unity's asset store.
 
 ![Godot Editor Content](./img/godot-content.png)
 
@@ -74,27 +77,29 @@ Of course, these depend a lot on your current skills. If you have no programming
 
 ## How does a game engine work?
 
-A game engine is built out of many complex parts or modules. Each with its own specialized function. Some of the more obvious ones are:
+A game engine is built out of many parts or modules, each with a specific role. Some of the more obvious ones are:
 
 - Audio engine
 - Physics engine
-- Graphical User Interfaces
-- Rendering
+- Graphical User Interface
+- 2D or 3D Rendering
 - Animation
 - Networking
-- AI
+- Artificial Intelligence
 
-Apart from the modules themselves, game engines have managers that organize the interaction between these different parts. Most modern game engines run some of these modules in parallel in order to improve performance. Parallel execution increases code complexity substantially, not to mention the complexities that comes with the visual rendering pipeline for the video card. For this reason and many more, most game developers, be it hobbyists and all the way to seniors, opt for available game engines on the market instead of creating everything from scratch.
+On top of the modules, general engines have systems that organize the interaction between these different parts. Most modern game engines run some of these modules in parallel to improve performance. 
+
+Parallel execution increases code complexity a lot. The rendering code and performance implications of transferring information from the processor (CPU) to the graphics card (GPU) also add complexity, especially for 3D. For this reason and many more, most game developers opt for available game engines on the market instead of creating theirs from scratch.
 
 ![Unity](./img/unity.png)
 
-Most of these tools allow you to inject custom functionality by means of a scripting programming language through the use of built-in components. So you can bring in third party assets and resources from different places such as 3D modelling applications, audio-creation tools, image editors, fonts from the internet, and much more that you can then organize, operate on, and customize to fit your game's needs.
+Most general engines allow you to code your game using a scripting programming language along with built-in components. You can import assets and resources from 3D modeling applications, audio creation tools, image editors, and much more. The editor then allows you to organize and use your assets in your code.
 
-Most general game engines today offer more than just operating on and organizing these resources though. Through a plug-in architecture, they allow you to even customize the game engine editor itself, leading to highly opinionated workflows. With modern video card technology, some even allow you to customize the way things are rendered on the screen, by tapping into the video rendering pipeline.
+Most general engines offer a plug-in architecture, allowing you to customize the editor itself, leading to a personalized experience. Some even allow you to customize rendering by tapping into the video rendering pipeline with modern video cards.
 
-This just scratches the surface. There's lots more to talk about, advanced topics that we can't cover in a general article like this one.
+They also help you export games for your target platforms, such as Windows, Linux, macOS, Android, iOS, and consoles. We can't underestimate the importance of having an export manager as many complexities come with cross-platform support.
 
-One important aspect of game engines is a project manager that helps you exporting games for your target platforms, such as Windows, Linux, MacOS, Android, iOS, and consoles. We can't underestimate the importance of having an exports manager as there are many complexities that come with cross-platform support.
+This scratches the surface of what general engines can do for you, but that hopefully gives you a sense of the tools they provide.
 
 ## Can I make my dream game now?
 
