@@ -3,6 +3,7 @@ title = "Game Engine Basics"
 
 description = "What are game engines and what are the important factors to consider when browsing for game engines on the market."
 author = "razvan"
+coAutors = ["nathan"]
 
 date = 2020-08-15T21:52:08+03:00
 weight = 2
@@ -16,6 +17,8 @@ You will learn:
 - What game engines are.
 - What they do.
 - How to choose the right game engine _for you_.
+
+![Godot Assets in Editor](./img/godot-engine.png)
 
 {{< note >}}
 If you're a developer already and you know about game engines, we have [a more advanced guide]({{< ref "tutorial/getting-started/learn-to/game-engine-choose/index.md" >}}) about choosing your game engine.
@@ -50,7 +53,7 @@ Game engines come in many flavors. Some offer a complete editor while others onl
 
 Editors allow you to create game levels visually. You import assets like images, 3D models, or audio files and place them in the editor's viewport. The actual engine is the code that takes all these levels and runs your game.
 
-![Godot Assets in Editor](./img/godot-engine.png)
+![Game Maker's room editor](./img/game-maker.jpg)
 
 Some game engines come with a complete editor: Unreal, Unity, Godot, Game Maker, Construct. Others like Panda3D or Phaser only provide code. This isn't to say that one type is better than the other. Every development team has different needs, and they should assess the tools they use on a per-project basis.
 
@@ -103,17 +106,20 @@ This scratches the surface of what general engines can do for you, but that hope
 
 ## Can I make my dream game now?
 
-Making games isn't an easy task, but answering this question is a bit more complicated. You have instances of highly popular simple games like Flappy Birds, but these are mostly exceptions. Even with these you need to have an understanding about programming, visual design and audio at the very least.
+Making games isn't an easy task, but answering this question is a bit more complicated. You have instances of highly popular simple games like Flappy Birds, but these are mostly exceptions. Even with these, you need to understand programming, visual design, and audio.
 
 {{< figure src="./img/godot-game.jpg" alt="Godot Game: TailQuest" caption="[Godot Game: TailQuest](https://store.steampowered.com/app/824090/TailQuest_Defense/)" >}}
 
-One of the first questions to answer is how to choose a game engine. If you're a beginner or hobbyist starting out, browsing for game engines is relatively simple because you can just go for what's free and easy to find. Some of the more important aspects in choosing an engine, apart from it being free, is user-friendliness, documentation and community support rather than high performance. These are the first hurdles you may face at the beginning and regardless of the tool you pick, you'll have to learn the basics of game development, skills that are transferable and can be applied to any tool.
+One of the first questions you want to answer is which first game engine you should pick. One of the more critical aspects is its user-friendliness. Documentation and community support matter more than high performances at first. Regardless of the tool you choose, you'll have to learn the basics of game development. These skills are transferable to other game engines.
 
-With that in mind, instead of getting hung up on the decision, we recommend looking into the Godot game engine among your picks.
+With that in mind, we recommend looking into the [Godot game engine](https://godotengine.org/) among your picks.
 
-{{< note >}}We have many free [beginner-friendly Godot tutorials and demos]({{< ref "tutorial/godot/_index.md" >}}) as well as [in-depth courses](https://gdquest.mavenseed.com) to help you get beyond the initial steps. You can also support us through [our latest Kickstarter](https://www.kickstarter.com/projects/gdquest/godot-2d-secrets-level-up-your-game-creation-skills), started 15 August, - Godot 2D Secrets: Level Up your Game Creation Skills by getting a great deal out of it. We appreciate it!{{</ note >}}
+Godot is a fully featured beginner-friendly general game engine, packed in a small executable, capable of making both 2D and 3D games. It's well worth exploring what it has to offer.
 
-Godot is a full-feature beginner-friendly general game engine, packed in a small executable, capable of making both 2D and 3D games. It's well worth exploring what it has to offer.
+It has mature documentation, although it's a bit unorganized at the moment. The community is friendly and helpful, and Godot is a developer-friendly game engine.
 
-The documentation, although a bit unorganized at the moment, is mature enough. The community is friendly and helpful and Godot is one of the most developer-friendly game engines you can find.
+To get you started, we wrote a complete [beginner learning path]({{< ref "tutorial/godot/learning-paths/beginner/index.md" >}}). It only contains free resources.
 
+We also sell [in-depth courses](https://gdquest.mavenseed.com) to help you get beyond the initial steps.
+
+If you'd like to support our work, we are on Kickstarter to crowdfund [Godot 2D Secrets](https://www.kickstarter.com/projects/gdquest/godot-2d-secrets-level-up-your-game-creation-skills), a comprehensive course to help you level up your game creation skills. All the details are on the Kickstarter campaign page.
