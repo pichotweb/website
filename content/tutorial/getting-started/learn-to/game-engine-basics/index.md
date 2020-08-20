@@ -18,7 +18,7 @@ You will learn:
 - What they do.
 - How to choose the right game engine _for you_.
 
-![Godot Assets in Editor](./img/godot-engine.png)
+![Godot Assets in Editor](godot-engine.png)
 
 {{< note >}}
 If you're a developer already and you know about game engines, we have [a more advanced guide]({{< ref "tutorial/getting-started/learn-to/game-engine-choose/index.md" >}}) about choosing your game engine.
@@ -47,13 +47,13 @@ And more. These expectations came with the growth of general game engines like U
 
 On the other hand, **specialized engines** are created and optimized for one game or one type of game. RPG Maker, a program designed to develop 2D Japanese RPGs, is a well-known example. Popular indie games like Super Meat Boy or Northgard also run on dedicated engines.
 
-![RPG Maker](./img/rpg-maker.jpg)
+![RPG Maker](rpg-maker.jpg)
 
 Game engines come in many flavors. Some offer a complete editor while others only provide code that you build from.
 
 Editors allow you to create game levels visually. You import assets like images, 3D models, or audio files and place them in the editor's viewport. The actual engine is the code that takes all these levels and runs your game.
 
-![Game Maker's room editor](./img/game-maker.jpg)
+![Game Maker's room editor](game-maker.jpg)
 
 Some game engines come with a complete editor: Unreal, Unity, Godot, Game Maker, Construct. Others like Panda3D or Phaser only provide code. This isn't to say that one type is better than the other. Every development team has different needs, and they should assess the tools they use on a per-project basis.
 
@@ -68,7 +68,7 @@ Some pros are that:
 - With an editor, it's easier for non-coders to participate in the development process.
 - Engines can provide a plug-in <abbr title="Application Programming Interface">API</abbr> for third-parties to integrate their tools and make them available to others. You can find many specialized editors for different types of games on Unity's asset store.
 
-![Godot Editor Content](./img/godot-content.png)
+![Godot Editor Content](godot-content.png)
 
 Here are some cons:
 
@@ -94,7 +94,7 @@ On top of the modules, general engines have systems that organize the interactio
 
 Parallel execution increases code complexity a lot. The rendering code and performance implications of transferring information from the processor (CPU) to the graphics card (GPU) also add complexity, especially for 3D. For this reason and many more, most game developers opt for available game engines on the market instead of creating theirs from scratch.
 
-![Unity](./img/unity.png)
+![Unity](unity.png)
 
 Most general engines allow you to code your game using a scripting programming language along with built-in components. You can import assets and resources from 3D modeling applications, audio creation tools, image editors, and much more. The editor then allows you to organize and use your assets in your code.
 
@@ -108,7 +108,7 @@ This scratches the surface of what general engines can do for you, but that hope
 
 Making games isn't an easy task, but answering this question is a bit more complicated. You have instances of highly popular simple games like Flappy Birds, but these are mostly exceptions. Even with these, you need to understand programming, visual design, and audio.
 
-{{< figure src="./img/godot-game.jpg" alt="Godot Game: TailQuest" caption="[Godot Game: TailQuest](https://store.steampowered.com/app/824090/TailQuest_Defense/)" >}}
+{{< figure src="godot-game.jpg" alt="Godot Game: TailQuest" caption="[Godot Game: TailQuest](https://store.steampowered.com/app/824090/TailQuest_Defense/)" >}}
 
 One of the first questions you want to answer is which first game engine you should pick. One of the more critical aspects is its user-friendliness. Documentation and community support matter more than high performances at first. Regardless of the tool you choose, you'll have to learn the basics of game development. These skills are transferable to other game engines.
 
