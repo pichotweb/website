@@ -9,9 +9,9 @@ This guide will get you started using the tool with a complete AI agent example 
 
 The steering toolkit being a framework, you need to use GDScript code to design and control AI agents.
 
-{{% notice note %}}
+{{% note %}}
 In the [steering toolkit repository](https://github.com/GDQuest/godot-steering-toolkit/), you will find many demos that showcase the steering toolkit in action, including path follow, blended movement, and group behaviors.
-{{% /notice %}}
+{{% /note %}}
 
 The goal of this class is to show how an agent can chase a player and predict where the player will be while also maintaining a distance from them, with some complex behaviors: 
 

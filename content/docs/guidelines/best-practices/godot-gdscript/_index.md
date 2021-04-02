@@ -123,9 +123,9 @@ signal talk_started(parameter_name)
 signal talk_finished
 ```
 
-{{% notice note %}}
-Starting from Godot 3.2, you can write docstrings as a series of comments above any class, property, signal, or function. The GDScript language server will show the comments as part of the description in the docs preview, if your code editor supports this feature. You can also use that to create a code reference with our tool [GDScript Docs Maker](https://github.com/GDQuest/gdscript-docs-maker).
-{{% / notice %}}
+{{% note %}}
+From Godot 3.2, you can write docstrings above any property, signal, or function as a series of comments above their definition, and the GDScript language server will show them in the docs completion. You can also use that to create a code reference with our tool [GDScript Docs Maker](https://github.com/GDQuest/gdscript-docs-maker).
+{{% /note %}}
 
 After signals, the order is: enums, constants, exported variables, public variables (regular name), and pseudo-private variables (starting with `_`), in this order.
 
@@ -300,9 +300,9 @@ var path := TrajectorySpline.new()
 
 This said, it's impossible to get rid of `null` completely because GDScript relies on built-in functions that work with `null` values.
 
-{{% notice note %}}
-`None`, `null`, `NULL`, and similar references may well be the biggest mistake in the history of computing. Here's a detailed explanation from the man who invented it himself: [Null References: The Billion Dollar Mistake](//www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare).
-{{% /notice %}}
+{{% note %}}
+`None`, `null`, `NULL`, and similar references could be the biggest mistake in the history of computing. Here's a detailed explanation from the man who invented it himself: [Null References: The Billion Dollar Mistake](//www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare).
+{{% /note %}}
 
 ## Write self-documenting code and use comments sparingly
 

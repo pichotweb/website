@@ -20,9 +20,9 @@ For an example of this, see the Player in our [Godot Platformer 2D project](//gi
 
 {{< figure src="../images/aggregation-player-scene-tree.png" >}}
 
-{{% notice note %}}
+{{% note %}}
 In Object-Oriented Programming, **aggregation** is a type of **association** between objects. In the example above, the `Player` object uses other objects such as the `Hook` or the `CameraRig` but these can still work even if we remove the association with the `Player` node.
-{{% /notice %}}
+{{% /note %}}
 
 ### Every building-block scene should run by itself without errors
 

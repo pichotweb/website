@@ -26,9 +26,9 @@ Before updating a third-party dependency, you should always read the release not
 
 We use [semantic versioning](https://semver.org/), so unless the framework's major release number changes, it should be safe for you to update to a new release.
 
-{{% notice note %}} 
+{{% note %}} 
 The major version of a framework is the first digit of the version number. For instance, in version `v2.1.0`, it is `2`.
-{{% /notice %}} 
+{{% /note %}} 
 
 ### How to update ###
 

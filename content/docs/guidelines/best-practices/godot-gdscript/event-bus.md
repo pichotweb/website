@@ -14,9 +14,9 @@ This guide covers a pattern to maintain signal connections in Godot projects of 
 
 Maintaining signal connections isn't the easiest in Godot, especially when wiring them via code. Godot 3.1 doesn't offer any visual cues for signals connected through code as opposed to signals connected with the editor. Connecting signals through the editor or via code have different advantages.
 
-{{% notice note %}}
+{{% note %}}
 Since Godot 3.2, an icon in the script editor's margin indicates signal connections to a given function.
-{{% /notice %}}
+{{% /note %}}
 
 {{< youtube "S6PbC4Vqim4" >}}
 

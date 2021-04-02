@@ -2,7 +2,6 @@ baseURL = "//gdquest.com/"
 languageCode = "en-us"
 title = "GDQuest"
 titleCaseStyle = "Chicago"
-theme = "github.com/matcornic/hugo-theme-learn"
 
 disableLanguages = ["es", "fr", "ja"]
 

@@ -44,9 +44,9 @@ However, there are many cases where colors are symbolic. An example of this is u
 
 There are no hard rules. What matters is that the players understand the game from its graphics.
 
-{{% notice note %}}
+{{% note %}}
 You may have seen infographics about [the meaning of colors](https://www.color-meanings.com/). Take them with a pinch of salt. The perception of colors varies between cultures and depends on the context. I've read multiple times that purple would be the color of royalty. But if you look at historical portraits or outfits of kings and queens, you'll find a lot of red, gold, beige, or black. These are the colors that come to my mind when thinking of "royalty."
-{{% / notice %}}
+{{% /note %}}
 
 ### Complementary colors ###
 
