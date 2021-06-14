@@ -1,0 +1,11 @@
+<!-- Renders a section's menu entries in the docs -->
+<!-- Takes two arguments: isActiveSection: bool and content: the dot -->
+{{ $isActiveSection := .isActiveSection }}
+{{ with .context }}
+<div class="menu-link -section" style="justify-content: start">
+<svg class="tut-menu-icon">
+    <use xlink:href="/img/icons/menu-icons.svg#{{ with .Params.icon }}{{ . }}{{ end }}" />
+</svg>
+<a href="{{ .Permalink }}" class="section {{ if $isActiveSection }}-active{{ end }}">{{ .Title }}</a>
+</div>
+{{ end }}

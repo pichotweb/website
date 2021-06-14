@@ -1,0 +1,45 @@
+<!-- Side menu for the /docs/ section -->
+<!-- Always shows all of the docs section's pages. -->
+<script type="text/javascript">
+  // Toggles the tutorial menu, altering the overflow of <body>
+  function navTutorialMobileToggle(closeButton) {
+    if (document.body.style.overflowY === "") {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "";
+    }
+    closeButton.previousElementSibling.classList.toggle("-open")
+  }
+</script>
+
+{{ $currentPage := . }}
+
+<!-- DONE: make all links clickable, even if they fold or unfold -> no JS here. Because sections have content. -->
+<!-- TODO: Start from the root section and walk all pages every time (to get active section and page, and unfold as necessary) -->
+<!-- TODO: unfold sections that are the active page's parent -->
+<nav class="nav-tutorial" role="navigation">
+  <div class="title">Menu</div>
+  <hr />
+  <ul class="list">
+    {{ range .FirstSection.Pages }}
+
+    {{ $isActiveSection := .IsAncestor $currentPage }}
+    <li>
+      {{ partial "components/nav-docs-section" dict "context" . "isActiveSection" $isActiveSection "currentPage" $currentPage }}
+      {{ $children := union .Sections .RegularPages }}
+      {{ if $children }}
+      <ul class="{{ if not $isActiveSection }}-folded{{ end }}">
+        {{ range $children.ByWeight }}
+        {{ if .IsSection }}
+        {{ partial "components/nav-docs-section" dict "context" . "isActiveSection" $isActiveSection "currentPage" $currentPage }}
+        {{ else }}
+        {{ partial "components/nav-docs-page" dict "context" . "currentPage" $currentPage }}
+        {{ end }}
+        {{ end}}
+      </ul>
+      {{ end}}
+    </li>
+    {{ end}}
+  </ul>
+</nav>
+<button href="javascript:void(0)" class="button-link -navtutorial -bottom -fullwidth -mobileonly" onclick="navTutorialMobileToggle(this)"><div class="text"><i class="fa fa-bars"></i> Tutorials</div></button>

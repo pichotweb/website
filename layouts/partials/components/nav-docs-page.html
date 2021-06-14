@@ -1,0 +1,21 @@
+<!-- Renders a single page link as a menu entry for the docs' side menu -->
+<!-- Takes three arguments: isActiveSection: bool, currentPage: Page, and content: the dot -->
+{{ $isActiveSection := .isActiveSection }}
+{{ $currentPage := .currentPage }}
+
+<p>
+    {{ .context }}
+</p>
+
+{{ with .context }}
+<li>
+<div class="menu-link -child1">
+    <a href="{{ .Permalink }}" class="-tutorial {{ if eq $currentPage . }}-active{{end}}">
+    {{ with .Params.menuTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}
+    </a>
+    {{ with partialCached "functions/get-tutorial-pill-data" . . }}
+    <span class="tag-pill {{ .class }}">{{ .type }}</span>
+    {{ end }}
+</div>
+</li>
+{{ end }}

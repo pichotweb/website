@@ -29,7 +29,7 @@ This guide covers the 5 essential habits of good tutorial writing:
 **Prerequisites and Related Material:**
 
 - [Tutorial structure guidelines]({{< ref "/docs/guidelines/best-practices/tutorial-structure/index.md" >}})
-- [Tutorial outline example]({{< ref "content/docs/guidelines/best-practices/tutorial-outline/index.md" >}})
+- [Tutorial outline example]({{< ref "/docs/guidelines/best-practices/tutorial-outline/index.md" >}})
 - [Our writing style guide]({{< ref "/docs/guidelines/best-practices/writing/index.md" >}})
 
 ## 1. Mind the structure
