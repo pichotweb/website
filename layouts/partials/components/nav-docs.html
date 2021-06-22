@@ -22,18 +22,17 @@
   <hr />
   <ul class="list">
     {{ range .FirstSection.Pages }}
-
     {{ $isActiveSection := .IsAncestor $currentPage }}
     <li>
-      {{ partial "components/nav-docs-section" dict "context" . "isActiveSection" $isActiveSection "currentPage" $currentPage }}
+      {{ partial "components/nav-docs-section" (dict "context" . "isActiveSection" $isActiveSection "currentPage" $currentPage) }}
       {{ $children := union .Sections .RegularPages }}
       {{ if $children }}
       <ul class="{{ if not $isActiveSection }}-folded{{ end }}">
         {{ range $children.ByWeight }}
         {{ if .IsSection }}
-        {{ partial "components/nav-docs-section" dict "context" . "isActiveSection" $isActiveSection "currentPage" $currentPage }}
+        {{ partial "components/nav-docs-section" (dict "context" . "isActiveSection" $isActiveSection "currentPage" $currentPage) }}
         {{ else }}
-        {{ partial "components/nav-docs-page" dict "context" . "currentPage" $currentPage }}
+        {{ partial "components/nav-docs-page" (dict "context" . "currentPage" $currentPage) }}
         {{ end }}
         {{ end}}
       </ul>
